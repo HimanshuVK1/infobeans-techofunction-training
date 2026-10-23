@@ -71,3 +71,13 @@ Restart-Service                                   Restarts a service
 Set-Service                                          Changes supported service settings
 Get-Process -Id                                   Inspects a process by PID
 
+------------------
+Network commands:
+  19 Get-NetAdapter
+  20 Get-NetRoute
+  21 Get-DnsClientServerAddress
+  22 Test-NetConnection -ComputerName "8.8.8.8" -TraceRoute
+  23 Get-NetTCPConnection
+  24 Get-NetFirewallRule
+  25 Get-NetLbfoTeam
+  26 Get-NetFirewallRule
