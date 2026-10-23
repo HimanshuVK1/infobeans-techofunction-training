@@ -48,4 +48,26 @@ True positive /False positive                                             True  
 Triage is a practices to prioritize to requirement.
 https://www.bing.com/videos/riverview/relatedvideo?q=false+positive+in+monitoring+devops+explain&mid=0C2C1D146E8356321C140C2C1D146E8356321C14&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUCFMdEr1H3hhCIdoKwsK80Tw&FORM=VIRE
 
+event=====>incident
+
+logs===>low level
+event========>high level
+
+Logs/event
+severity/priority================>
+source===================>who
+
+==============================================================
+Command                                 Purpose
+Get-Process                                    Lists running processes
+Get-Service                                     Lists services
+Get-CimInstance Win32_Process    Retrieves process details
+Get-CimInstance Win32_Service    Retrieves service configuration and status
+Get-Counter                                         Reads performance counters
+Get-WinEvent                                        Reads Windows event logs
+Start-Service                                         Starts a service
+Stop-Service                                       Stops a service
+Restart-Service                                   Restarts a service
+Set-Service                                          Changes supported service settings
+Get-Process -Id                                   Inspects a process by PID
 
