@@ -21,4 +21,31 @@ dxdiag
 Types of Processes:
 1) Foreground: It uses 80% of cpu and gpu resources
 2) Background: It uses 20% of cpu and gpu resources
-   
+
+-----------------------------------------
+python code for 
+    import threading, time
+    
+    def task(n):
+        print(f"Task {n} started")
+        time.sleep(2)          # simulates waiting (API/DB call)
+        print(f"Task {n} done")
+    
+    start = time.time()
+    threads = [threading.Thread(target=task, args=(i,)) for i in range(4)]
+    for t in threads: t.start()
+    for t in threads: t.join()
+    print(f"Total: {time.time() - start:.1f}s")   # ~2s, not 8s
+
+===========================================
+
+Process vs. Daemons
+Service==============>daemon
+Restart/Reload
+---------------------------
+100 request
+True positive /False positive                                             True               False
+Triage is a practices to prioritize to requirement.
+https://www.bing.com/videos/riverview/relatedvideo?q=false+positive+in+monitoring+devops+explain&mid=0C2C1D146E8356321C140C2C1D146E8356321C14&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUCFMdEr1H3hhCIdoKwsK80Tw&FORM=VIRE
+
+
