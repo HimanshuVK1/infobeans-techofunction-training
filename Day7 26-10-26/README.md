@@ -21,4 +21,18 @@ CMD vs Powershell
 PowerShell Commands
 1) Get-Help
 2) Get-Command > Get-Command *user*
-3) 
+
+
+==============================================================
+Security:
+    System hardening
+    System security:
+        DAC: user management and permission
+        MAC: SELinux
+
+Windows server security:
+    Windows Defender:
+        inbound
+        outbound
+
+        
