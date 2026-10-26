@@ -16,3 +16,9 @@ Windows performance troubleshooting
 Production troubleshooting scenarios
 
 ===========================================================
+CMD vs Powershell
+
+PowerShell Commands
+1) Get-Help
+2) Get-Command > Get-Command *user*
+3) 
